@@ -1,0 +1,92 @@
+:root {
+  --primary-background: #121212;
+  --secondary-background: #1e1e1e;
+
+  --primary-text: #eaeaea;
+  --secondary-text: #b0b0b0;
+
+  --accent-color: #2a3d66;
+}
+
+body {
+  background-color: var(--primary-background);
+  color: var(--primary-text);
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+  color: var(--primary-text);
+}
+
+p,
+li,
+pre {
+  color: var(--secondary-text);
+}
+
+#nav-bar {
+  font-size: 25px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#nav-bar p,
+#nav-bar a {
+  padding: 0px 5vh;
+  margin-bottom: 1vh;
+}
+
+#nav-bar a,
+#site-url a {
+  text-decoration: none;
+  color: var(--primary-text);
+}
+
+#nav-bar a:hover,
+#site-url a:hover {
+  text-decoration: underline;
+  color: var(--secondary-text);
+}
+
+#overview {
+  background-color: var(--secondary-background);
+  margin: 3vh 12vh;
+  padding: 2vh 5vh;
+
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#name-pic {
+  margin: 0px 10px;
+  width: 15%;
+}
+
+.overview-content {
+  margin: 15px 15px;
+  width: 25%;
+}
+
+#name {
+  font-size: 50px;
+}
+
+.about-title {
+  font-size: 40px;
+}
+
+.about-text {
+  font-size: 25px;
+}
