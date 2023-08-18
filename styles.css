@@ -90,3 +90,23 @@ pre {
 .about-text {
   font-size: 25px;
 }
+
+#successes {
+  background-color: var(--secondary-background);
+
+  margin: 3vh 12vh;
+  padding: 2vh 5vh;
+}
+
+#successes-table thead {
+  text-align: left;
+  font-size: 30px;
+}
+
+#successes-table tbody {
+  font-size: 25px;
+}
+
+#successes-table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
