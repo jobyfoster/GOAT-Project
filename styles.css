@@ -14,15 +14,6 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-a {
-  color: var(--accent-color);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
 h1,
 h2,
 h3 {
@@ -48,14 +39,12 @@ pre {
   margin-bottom: 1vh;
 }
 
-#nav-bar a,
-#site-url a {
+#nav-bar a {
   text-decoration: none;
   color: var(--primary-text);
 }
 
-#nav-bar a:hover,
-#site-url a:hover {
+#nav-bar a:hover {
   text-decoration: underline;
   color: var(--secondary-text);
 }
@@ -71,12 +60,20 @@ pre {
 
 #name-pic {
   margin: 0px 10px;
-  width: 15%;
+  width: 250px;
 }
 
 .overview-content {
-  margin: 15px 15px;
-  width: 25%;
+  margin: 15px 25px;
+  width: 400px;
+}
+
+.overview-content a {
+  text-decoration: none;
+}
+
+.overview-content a:hover {
+  text-decoration: underline;
 }
 
 #name {
@@ -98,15 +95,41 @@ pre {
   padding: 2vh 5vh;
 }
 
-#successes-table thead {
+#successes-table {
+  border-spacing: 10px;
+}
+
+#successes-headers {
   text-align: left;
   font-size: 30px;
+
+  border-bottom: 1px solid #ddd;
 }
 
 #successes-table tbody {
   font-size: 25px;
 }
 
-#successes-table tbody tr {
-  border-bottom: 1px solid #ddd;
+#successes-table tbody tr:nth-child(even) {
+  background-color: #141414;
+}
+
+#resources {
+  background-color: var(--secondary-background);
+  margin: 3vh 12vh;
+  padding: 2vh 5vh;
+
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#resource-links {
+  width: 800px;
+  font-size: 30px;
+
+  margin: 90px 100px;
+}
+
+#resource-links a {
+  color: var(--accent-color);
 }
