@@ -69,7 +69,7 @@ pre {
 
 .overview-content {
   margin: 15px 25px;
-  width: 25em;
+  width: 28em;
 }
 
 .overview-content a {
@@ -160,35 +160,10 @@ pre {
 
 /* Responsive design for smaller screens */
 @media only screen and (max-width: 768px) {
-  iframe {
-    width: 100%;
-    height: auto;
-  }
-
   #overview {
     padding: 20px;
     justify-content: center;
     flex-direction: column;
-  }
-
-  #name {
-    font-size: 2em;
-  }
-
-  #name-pic {
-    width: 100%;
-  }
-
-  .overview-content {
-    width: 90%;
-  }
-
-  #resource-links {
-    width: 100%;
-  }
-
-  .good-at-container {
-    width: 100%;
   }
 
   .about-title {
@@ -196,7 +171,21 @@ pre {
   }
 
   .about-text {
-    font-size: 1.5em;
+    font-size: 1.3em;
+  }
+
+  #name {
+    font-size: 1.7em;
+  }
+
+  #name-pic,
+  .overview-content,
+  .good-at-container {
+    width: 100%;
+  }
+
+  .overview-content {
+    width: 90%;
   }
 
   #nav-bar {
@@ -208,16 +197,32 @@ pre {
   #successes-table {
     margin: 0;
   }
-  #successes-table tbody {
+
+  #successes-table tbody,
+  .good-at-container p {
     font-size: 1em;
+  }
+
+  .good-at-container h1 {
+    font-size: 1.5em;
+
+    margin: 0.5em;
+  }
+
+  .good-at-container p {
+    font-size: 1.2em;
+    word-spacing: 0.3em;
   }
 
   #resource-links {
     margin: 0;
-    font-size: 1.8em;
+    font-size: 1.5em;
+
+    width: 100%;
   }
 
-  .good-at-container p {
-    font-size: 1em;
+  iframe {
+    width: 100%;
+    height: auto;
   }
 }
