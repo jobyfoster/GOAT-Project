@@ -68,8 +68,10 @@ pre {
 }
 
 .overview-content {
-  margin: 15px 25px;
-  width: 28em;
+  margin: 0.5em 0.1em;
+  padding: 0.5em 2em;
+  width: 23em;
+  background-color: var(--secondary-background);
 }
 
 .overview-content a {
@@ -90,6 +92,10 @@ pre {
 
 .about-text {
   font-size: 1.7em;
+}
+
+#why-admire-him {
+  width: 35em;
 }
 
 #successes {
